@@ -1,0 +1,37 @@
+{
+  "categories":[
+    {
+      "name": "Mens",
+      "subcategories": [
+        "Jeans",
+        "Shirt",
+        "T-shirt",
+        "Jacket",
+        "Sportwear",
+        "Suit"
+      ]
+    },
+    {
+      "name": "Kids",
+      "subcategories": [
+        "Jeans",
+        "Shirt",
+        "T-shirt",
+        "Jacket",
+        "Sportwear",
+        "Suit"
+      ]
+    },
+    {
+      "name": "Womens",
+      "subcategories": [
+        "Jeans",
+        "Shirt",
+        "T-shirt",
+        "Jacket",
+        "Sportwear",
+        "Suit"
+      ]
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get/get.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+import '../entry_point/screens/welcome/weolcome_screen.dart';
 import '../main.dart';
 import 'login_email_password_failure.dart';
 import 'signup_email_password_failure.dart';
@@ -123,7 +124,4 @@ class AuthenticationRepository extends GetxController {
     }
     return null;
   }
-}
-
-class WelcomeScreen {
 }

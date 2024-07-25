@@ -1,14 +1,21 @@
 import 'package:FabriConnect/authentication_repository/authentication_repository.dart';
-import 'package:FabriConnect/exit_dialogue.dart';
+import 'package:FabriConnect/cart.dart';
+import 'package:FabriConnect/entry_point/screens/splash_screen/splash_screen.dart';
+
 import 'package:FabriConnect/firestore_services.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:FabriConnect/kids.dart';
+import 'package:FabriConnect/profile.dart';
+import 'package:FabriConnect/men.dart';
+import 'package:FabriConnect/women.dart';
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/material.dart';
-import 'firebase_options.dart';
-import 'package:get/get.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:velocity_x/velocity_x.dart';
+import 'package:FabriConnect/exit_dialogue.dart';
+
+import 'firebase_options.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -40,7 +47,6 @@ class MyApp extends StatelessWidget {
       home: SplashScreen(),
     );
   }
-  SplashScreen() {}
 }
 
 class MyHomePage extends StatefulWidget {
@@ -310,10 +316,4 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     );
   }
-
-  cart() {}
-  profile(){}
-  men() {}
-  kids() {}
-  women() {}
 }
