@@ -1,6 +1,6 @@
-import 'package:FabriConnect/firebase_consts.dart';
-import 'package:FabriConnect/firestore_services.dart';
-import 'package:FabriConnect/item_detail.dart';
+import 'package:b2b/firebase_consts.dart';
+import 'package:b2b/firestore_services.dart';
+import 'package:b2b/item_detail.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:velocity_x/velocity_x.dart';
