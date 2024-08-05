@@ -1,6 +1,6 @@
-import 'package:FabriConnect/profile.dart';
-import 'package:FabriConnect/category.dart';
-import 'package:FabriConnect/items.dart';
+import 'package:b2b/profile.dart';
+import 'package:b2b/category.dart';
+import 'package:b2b/items.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
