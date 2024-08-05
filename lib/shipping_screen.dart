@@ -1,5 +1,5 @@
-import 'package:FabriConnect/payment_method.dart';
-import 'package:FabriConnect/retailer/controllers/cart_controller.dart';
+import 'package:b2b/payment_method.dart';
+import 'package:b2b/retailer/controllers/cart_controller.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:velocity_x/velocity_x.dart';
