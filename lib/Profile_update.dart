@@ -1,9 +1,9 @@
 import 'dart:io';
-import 'package:FabriConnect/Profile_update.dart';
+import 'package:b2b/Profile_update.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:FabriConnect/retailer/controllers/profile_controller.dart';
+import 'package:b2b/retailer/controllers/profile_controller.dart';
 import 'package:velocity_x/velocity_x.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
