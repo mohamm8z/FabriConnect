@@ -17,14 +17,14 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      return web;
+      throw UnsupportedError(
+        'DefaultFirebaseOptions have not been configured for web - '
+        'you can reconfigure this by running the FlutterFire CLI again.',
+      );
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for android - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return android;
       case TargetPlatform.iOS:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for ios - '
@@ -36,7 +36,10 @@ class DefaultFirebaseOptions {
           'you can reconfigure this by running the FlutterFire CLI again.',
         );
       case TargetPlatform.windows:
-        return windows;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for windows - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -49,23 +52,11 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyC3wP56o6jFC5zvQSkXeTlFK2TedvDEw8w',
-    appId: '1:1037408462576:web:6c1719714df587a5564435',
-    messagingSenderId: '1037408462576',
-    projectId: 'fabriconnect-2882c',
-    authDomain: 'fabriconnect-2882c.firebaseapp.com',
-    storageBucket: 'fabriconnect-2882c.appspot.com',
-    measurementId: 'G-S0453VSWE7',
-  );
-
-  static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyC3wP56o6jFC5zvQSkXeTlFK2TedvDEw8w',
-    appId: '1:1037408462576:web:bb8c120391b5fbaf564435',
-    messagingSenderId: '1037408462576',
-    projectId: 'fabriconnect-2882c',
-    authDomain: 'fabriconnect-2882c.firebaseapp.com',
-    storageBucket: 'fabriconnect-2882c.appspot.com',
-    measurementId: 'G-KK6TVV0XE8',
+  static const FirebaseOptions android = FirebaseOptions(
+    apiKey: 'AIzaSyACpLK0KBu2vViXtizF6lPP0IgUO0CBkOs',
+    appId: '1:473335042909:android:524de7ba58783b7bcd8eb4',
+    messagingSenderId: '473335042909',
+    projectId: 'b2bexchange-8d5f2',
+    storageBucket: 'b2bexchange-8d5f2.appspot.com',
   );
 }

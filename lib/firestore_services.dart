@@ -1,4 +1,4 @@
-import 'package:FabriConnect/firebase_consts.dart';
+import 'package:b2b/firebase_consts.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 class FirestoreServices{
@@ -42,8 +42,8 @@ class FirestoreServices{
     var res= await Future.wait([
       firestore.collection(cartCollection).where('added_by',isEqualTo:FirebaseAuth.instance.currentUser!.uid).get().then(
               (value) {
-            return value.docs.length;
-          }),
+                 return value.docs.length;
+              }),
       firestore.collection(productsCollection).where('p_wishlist',arrayContains:FirebaseAuth.instance.currentUser!.uid).get().then(
               (value) {
             return value.docs.length;
@@ -57,6 +57,6 @@ class FirestoreServices{
   }
 
   static allProducts(){
-    return firestore.collection(productsCollection).snapshots();
+     return firestore.collection(productsCollection).snapshots();
   }
 }
